@@ -109,14 +109,4 @@ public class Labirint {
     }
     return lab;
   }
-
-  public static void main(String[] args) {
-    char[][] lab = initLab();
-    for (char[] ints : lab) {
-      for (int j = 0; j < lab[0].length; j++) {
-        System.out.print(ints[j]);
-      }
-      System.out.println();
-    }
-  }
 }
