@@ -56,9 +56,10 @@ public class Labirint {
     char[][] lab;
     int maxN = 15;
     int minN = 10;
-    int rowNumber = ((int) (Math.random() * (maxN - minN)) + minN);
-    int colNumber = ((int) (Math.random() * (maxN - minN)) + minN);
-
+    //int rowNumber = ((int) (Math.random() * (maxN - minN)) + minN);
+   // int colNumber = ((int) (Math.random() * (maxN - minN)) + minN);
+    int rowNumber = 5;
+    int colNumber = 5;
     lab = new char[3 * rowNumber][3 * colNumber];
     for (int i = 0; i < lab.length; i++)
       for (int j = 0; j < lab[0].length; j++)
@@ -68,7 +69,7 @@ public class Labirint {
           lab[i][j] = '.';
         }
 
-    int allCells = rowNumber * colNumber;
+    int allCells =  rowNumber * colNumber;
     int curVisitedCells = 1;
     Stack<Pair> pairHandler = new Stack<>();
     boolean[][] used = new boolean[rowNumber][colNumber];
