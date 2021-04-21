@@ -2,7 +2,7 @@ import java.util.Map;
 
 public class Pair implements Map.Entry<Integer, Integer> {
   private Integer coordX;
-  private Integer coordY;
+  private final Integer coordY;
 
   Pair(int x, int y) {
     coordX = x;
